@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet the Team Section | devChallenges.io</title>
+    <link
+      rel="icon"
+      href="favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Outfit", sans-serif;
+      }
+
+      body {
+        margin: 72px;
+        background-color: #f3f4f6;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 32px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+      }
+
+      .intro {
+        flex: 1 1 40%;
+        max-width: 400px;
+      }
+
+      .intro span {
+        color: #263fa9;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .intro h1 {
+        font-size: 32px;
+        font-weight: 700;
+        margin: 12px 0;
+      }
+
+      .intro p {
+        font-size: 16px;
+        color: #374151;
+        margin-bottom: 32px;
+      }
+
+      .see-members {
+        margin-top: 32px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #374151;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        cursor: pointer;
+      }
+
+      .team-grid {
+        flex: 1 1 55%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+
+      .card {
+        position: relative;
+        width: 100%;
+        height: 288px;
+        overflow: hidden;
+        border-radius: 16px;
+      }
+
+      .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .overlay {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: #fff;
+      }
+
+      .overlay .name {
+        font-weight: 600;
+      }
+
+      .overlay .role {
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 48px;
+        color: #374151;
+      }
+
+      .author-info a {
+        text-decoration: none;
+        color: #263fa9;
+      }
+
+      @media (max-width: 900px) {
+        .team-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+
+        .team-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro">
+        <span>Our team</span>
+        <h1>Meet the brain</h1>
+        <p>We are proud to have them as part of our community and look forward to continuing to push the boundaries of what's possible in the world of digital art.</p>
+        <div class="see-members">
+          See all members <img src="arrow up right.svg" alt="arrow" style="height: 12px;" />
+        </div>
+      </div>
+
+      <div class="team-grid">
+        <div class="card" style="background-color: #c1b6f8;">
+          <img src="person_1.png" alt="Liam Novak" />
+          <div class="overlay">
+            <p class="name">Liam Novak</p>
+            <p class="role">Software Engineer</p>
+          </div>
+        </div>
+
+        <div class="card" style="background-color: #edacd2;">
+          <img src="person_2.png" alt="Sophia Moretti" />
+          <div class="overlay">
+            <p class="name">Sophia Moretti</p>
+            <p class="role">Business Development Manager</p>
+          </div>
+        </div>
+
+        <div class="card" style="background-color: #9dc4f8;">
+          <img src="person_3.png" alt="Ethan Rossi" />
+          <div class="overlay">
+            <p class="name">Ethan Rossi</p>
+            <p class="role">Business Development Manager</p>
+          </div>
+        </div>
+
+        <div class="card" style="background-color: #f8d8b0;">
+          <img src="person_4.png" alt="Isabella Ricci" />
+          <div class="overlay">
+            <p class="name">Isabella Ricci</p>
+            <p class="role">UX Designer</p>
+          </div>
+        </div>
+
+        <div class="card" style="background-color: #86e7d4;">
+          <img src="person_5.png" alt="Noah Conti" />
+          <div class="overlay">
+            <p class="name">Noah Conti</p>
+            <p class="role">Content Creator</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="author-info">
+      Coded by <a href="https://codewithkriti.com/">Kriti Ranjan Here</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
+    </div>
+  </body>
+</html>
